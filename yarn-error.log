@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\ASUS\product\18.0.0\dbhomeXE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\android-sdk-26-1-1;C:\ProgramData\ComposerSetup\bin;C:\wamp64\bin\php\php7.4.9;D:\xampp\htdocs;C:\xampp\htdocs;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ASUS\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python39\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\ASUS\AppData\Roaming\npm;C:\Users\ASUS\.dotnet\tools;C:\src\flluter\flutter\bin;c:\gradle-5.6.4\bin;C:\Gradle\gradle-7.3.3-bin\gradle-7.3.3\bin;c:\adb\;C:\Users\ASUS\AppData\Roaming\Composer\vendor\bin;C:\Users\ASUS\AppData\Local\Coursier\data\bin;C:\xampp\php;C:\wamp64\bin\php\php5.6.40;C:\xampp\htdocs;C:\wamp64\bin\php\php7.1.33;
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "ecommerce",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "cd client && npm run start",
+      "server-install": "npm install",
+      "client-install": "cd client && npm install",
+      "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "heroku-postbuild": "cd client && npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.0",
+      "cloudinary": "^1.23.0",
+      "concurrently": "^5.3.0",
+      "cookie-parser": "^1.4.5",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "express-fileupload": "^1.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.10.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
